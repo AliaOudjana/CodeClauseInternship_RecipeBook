@@ -1,0 +1,87 @@
+@media (max-width: 480px) {
+    #recipeContent{
+        padding: 0% 4% 2% 4%;
+     }
+     #recipeImage{
+        width: 11.25rem;
+        height: 8.44rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #recipeContent{
+        padding: 0% 10% 5% 10%;
+     }
+     #recipeImage{
+        width: 12.5rem;
+        height: 9.375rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #recipeContent{
+        padding: 0% 15% 7% 15%;
+     }
+     #recipeImage{
+        width: 15.625rem;
+        height: 11.75rem;
+    }
+}
+
+@media (min-width: 1025px){
+    #recipeContent{
+        padding: 0% 25% 8% 25%;
+     }
+     #recipeImage{
+        width: 18.75rem;
+        height: 14.1rem;
+     }
+}
+
+h1, h2{
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2.18rem;
+}
+
+#recipeDate{
+    font-weight: 300;
+    font-style: italic;
+}
+
+#recipeImage{
+    border-radius: 1.8rem;
+    box-shadow: 0.189rem 0.189rem 0.25rem #666666;
+}
+
+#ingredientsTable{
+    border-collapse: collapse;
+}
+
+#ingredientsTable tr{
+    border-bottom: 0.125rem dotted #7FB77E;
+    width: 100%;
+}
+
+#ingredientsTable tr:nth-child(odd) {
+    background-color: #AAC8A7;
+}
+
+#ingredientsTable td{
+    padding: 0.625rem;
+}
+
+#removeRecipeBtn, #editRecipeBtn{
+    background-color: #AAC8A7;
+    border-radius: 0.3rem;
+    padding: 0.625rem;
+    width: 8rem;
+    font-weight: bold;
+}
+
+#removeRecipeBtn:hover, #editRecipeBtn:hover{
+    cursor: pointer;
+    background-color: #E9FFC2;
+}

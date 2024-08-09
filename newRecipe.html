@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Recipe</title>
+    <link rel="stylesheet" href="recipeBookStyle.css">
+    <link rel="stylesheet" href="recipeFormStylee.css">
+</head>
+<body>
+    <form action="" method="POST" id="newRecipeForm">
+
+        <div class="side">
+            <label for="recipeName">Recipe Name</label><br>
+            <input type="text" id="recipeName" class="inputField"
+            name="recipename" placeholder="Recipe Name"/><br>
+
+            <label for="ingredients">Ingredients</label><br>
+            <input type="text" id="ingredient1" class="inputField"
+            name="ingredient1" placeholder="Ingredient 1"/><br>
+            <input type="text" id="ingredient2" class="inputField"
+            name="ingredient2" placeholder="Ingredient 2"/><br>
+
+            <div id="extraIngredients"></div>
+
+            <div class="extraIngredientsButtons">
+                <input type="button" id="addIngredientButton" value="+" onclick="addIngredient()"/>
+                <input type="button" id="removeIngredientButton" value="-" onclick="removeIngredient()"/><br><br>
+            </div>
+
+            <label for="method">Method</label><br>
+            <textarea type="text" id="method" name="method" placeholder="Method"></textarea>
+            <br>
+        </div>
+
+        <div class="side">
+            <label for="recipeImage">Recipe Image</label><br>
+            <div id="imageContainer">
+                <img id="recipeImagePreview" src="" style="display: none;"/>
+            </div>
+            
+            <input type="file" id="recipeImage" onChange="viewImage(this)" accept=".png, .jpg, .jpeg"/><br>
+            <button type="button" id="submitButton" onclick="addNewRecipe()">Add Recipe</button>
+        </div>
+
+    </form>
+
+    <script type="text/javascript" src="manageRecipeBook.js"></script>
+</body>
+</html>

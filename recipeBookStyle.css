@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+    font-family: "lato", sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+#pageContent, #newRecipeForm, #indexPageContent{
+    margin-top: 1.25rem;
+    margin-bottom: 3.125rem;
+    padding-top: 1.25rem;
+    padding-bottom: 3.75rem;
+    width: 95%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    background-color: #C3EDC0;
+    border-radius: 1rem;
+}
