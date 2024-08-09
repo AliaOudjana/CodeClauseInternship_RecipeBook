@@ -17,8 +17,8 @@
             <table id="ingredientsTable"></table>
             <h2>Method</h2>
             <p id="method"></p>
-            <button id="removeRecipeBtn" onclick="removeRecipe(window.location.href.split('=').pop())">Remove Recipe</button>
-            <button id="editRecipeBtn" onclick="">Edit Recipe</button>
+            <button id="removeRecipeBtn" onclick="removeRecipe(recipeId)">Remove Recipe</button>
+            <button id="editRecipeBtn" onclick="redirectToEditPage(recipeId)">Edit Recipe</button>
         </div>
     </div>
 

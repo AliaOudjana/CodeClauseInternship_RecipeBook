@@ -105,3 +105,38 @@ function viewImage(recipeImage) {
     alert("The file must be an image (jpeg/jpg/png).");
   }
 }
+
+function redirectToEditPage(recipe){
+  window.location.href = "editRecipeForm.html?recipe=" + recipe;
+}
+
+function displayEditPage(recipe){
+  
+  let retrievedRecipe = localStorage.getItem(recipe);
+  let recipeData = JSON.parse(retrievedRecipe);
+
+  let recipeName = recipe.replaceAll("-", " ");
+  document.getElementById("recipeName").value = recipeName;
+
+  let ingredients = recipeData['ingredients'];
+  document.getElementById("ingredient1").value = ingredients[0];
+  document.getElementById("ingredient2").value = ingredients[1];
+  
+  for(let i=2; i<ingredients.length; i++){
+    addIngredient();
+    document.getElementById(`ingredient${i+1}`).value = ingredients[i];
+  }
+
+  document.getElementById("method").innerHTML = recipeData['method'];
+
+  let recipeImage = recipeData['recipeImage'];
+  document.getElementById("recipeImagePreview").src = recipeImage;
+  document.getElementById("recipeImagePreview").style.display = "inline-block";
+}
+
+function editRecipe(recipeName){
+  if(confirm('Are you sure you want to edit this recipe?')){
+    localStorage.removeItem(recipeName);
+    addNewRecipe();
+  }
+}
