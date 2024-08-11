@@ -1,4 +1,4 @@
-# CodeClauseInternship_RecipeBook
+# CodeClause Internship Recipe Book
 This web app is a platform to save your favourite recipes with images. It allows users to add, edit, display, and remove recipes.
 The app works seamlessly on different screen sizes, ensuring a smooth user experience.
 <br><br>
