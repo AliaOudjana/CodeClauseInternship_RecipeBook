@@ -7,7 +7,7 @@ The app works seamlessly on different screen sizes, ensuring a smooth user exper
 HTML, CSS, JS, Local Storage.
 <br><br><br>
 
-## Showcasing the Recipe Book App on 2 different devices with different screen sizes</b><br>
+### Showcasing the Recipe Book App on 2 different devices with different screen sizes</b><br>
 on PC (click image to view the video):
 [![Recipe Book Demo](recipebook.png)](https://youtu.be/XnB0f8EpNns)
 <br><br><br>
